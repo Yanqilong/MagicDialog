@@ -2,9 +2,9 @@
 Magic dialog, a common dialog for adapter all situation, you only need to customize layout and logic.
 
 #Demonstration
-<video src="https://github.com/Yanqilong/MagicDialog/blob/master/ScreenShot/ScreenRecord_2016-11-19-19-15-27.mp4" controls>
-Your browser does not implement html5 video.
-</ video>
+<video width="480" height="320" controls>
+<source src="https://github.com/Yanqilong/MagicDialog/blob/master/ScreenShot/ScreenRecord_2016-11-19-19-15-27.mp4">
+</video>
 
 # How to use
 ```sh
