@@ -3,8 +3,7 @@ Magic dialog, a common dialog for adapter all situation, you only need to custom
 
 #Demonstration
 
-
-### How to use
+# How to use
 ```sh
         //default`s dialog
         defaultMagicDialog = new MagicDialog.Builder(this)
