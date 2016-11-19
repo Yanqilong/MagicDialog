@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         magicDialog.setOnClickListener(R.id.btn_click_me, new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(MainActivity.this, "Hello Wave", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "默认弹窗一", Toast.LENGTH_SHORT).show();
                                 magicDialog.dismiss();
                             }
                         });
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         magicDialog.setOnClickListener(R.id.btn_click_me, new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(MainActivity.this, "Hello again Wave", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "弹窗二", Toast.LENGTH_SHORT).show();
                                 magicDialog.dismiss();
                             }
                         });
