@@ -2,7 +2,8 @@
 Magic dialog, a common dialog for adapter all situation, you only need to customize layout and logic.
 
 #Demonstration
-<iframe height=498 width=510 src="https://github.com/Yanqilong/MagicDialog/blob/master/ScreenShot/ScreenRecord_2016-11-19-19-15-27.mp4">
+
+[![IMAGE ALT TEXT](https://github.com/Yanqilong/MagicDialog/blob/master/ScreenShot/Screenshot_2016-11-19-19-24-28-493_com.migo.magic.png)](https://github.com/Yanqilong/MagicDialog/blob/master/ScreenShot/ScreenRecord_2016-11-19-19-15-27.mp4 "Video Title")
 
 # How to use
 ```sh
