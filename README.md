@@ -2,9 +2,7 @@
 Magic dialog, a common dialog for adapter all situation, you only need to customize layout and logic.
 
 #Demonstration
-<video width="480" height="320" controls>
-<source src="https://github.com/Yanqilong/MagicDialog/blob/master/ScreenShot/ScreenRecord_2016-11-19-19-15-27.mp4">
-</video>
+[![Little red ridning hood](http://i.imgur.com/7YTMFQp.png)](https://vimeo.com/3514904 "Little red riding hood - Click to Watch!")
 
 # How to use
 ```sh
