@@ -51,6 +51,10 @@ public class MagicDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //no title window
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         //init layout
         setContentView(mDialogDelegate.getDialogViewLayoutId());
 

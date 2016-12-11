@@ -12,5 +12,7 @@ public interface DialogDelegate {
 
     int getDialogViewLayoutId();
 
-    void onCreate(final MagicDialog magicDialog);
+    void onCreate(MagicDialog magicDialog);
+
+    void onStart();
 }
