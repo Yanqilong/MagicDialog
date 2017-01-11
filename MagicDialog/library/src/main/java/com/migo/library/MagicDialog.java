@@ -124,6 +124,11 @@ public class MagicDialog extends Dialog {
          */
         private DialogDelegate dialogDelegate;
 
+        /**
+         * 点击窗口之外是否可以取消
+         */
+        private boolean cancelable;
+
         public Builder(Context context) {
             this.context = context;
             width = 0.9f;
@@ -134,6 +139,7 @@ public class MagicDialog extends Dialog {
             relativeOffsetX = 0;
             relativeOffsetY = 0;
             backgroundDrawableResource = -1;
+            cancelable = true;
         }
 
         public Context getContext() {
@@ -221,6 +227,15 @@ public class MagicDialog extends Dialog {
             return this;
         }
 
+        public boolean isCancelable() {
+            return cancelable;
+        }
+
+        public Builder setCancelable(boolean cancelable) {
+            this.cancelable = cancelable;
+            return this;
+        }
+
         public MagicDialog build() {
             return new MagicDialog(this);
         }
@@ -259,6 +274,12 @@ public class MagicDialog extends Dialog {
             params.y = mBuilder.getRelativeOffsetY();
         }
         window.setAttributes(params);
+
+        if(mBuilder.cancelable) {
+            setCanceledOnTouchOutside(true);
+        } else {
+            setCanceledOnTouchOutside(false);
+        }
     }
 
     /**
