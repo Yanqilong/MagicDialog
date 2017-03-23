@@ -457,12 +457,13 @@ public class MagicDialog extends Dialog {
     }
 
     /**
-     * About listener
+     * listener to click
      */
-    public MagicDialog setOnClickListener(int viewId,
-                                         View.OnClickListener listener) {
-        View view = getView(viewId);
-        view.setOnClickListener(listener);
+    public MagicDialog setOnClickListener(View.OnClickListener listener, int... viewIds) {
+        for(int viewId : viewIds) {
+            View view = getView(viewId);
+            view.setOnClickListener(listener);
+        }
         return this;
     }
 

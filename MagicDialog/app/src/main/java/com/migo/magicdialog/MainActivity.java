@@ -45,13 +45,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         //Change text size
                         magicDialog.setTextSize(R.id.btn_click_me, 16);
 
-                        magicDialog.setOnClickListener(R.id.btn_click_me, new View.OnClickListener() {
+                        magicDialog.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(MainActivity.this, "默认弹窗一", Toast.LENGTH_SHORT).show();
-                                magicDialog.dismiss();
+                                if(v.getId() == R.id.btn_click_me) {
+                                    Toast.makeText(MainActivity.this, "默认弹窗一", Toast.LENGTH_SHORT).show();
+                                    magicDialog.dismiss();
+                                }
                             }
-                        });
+                        }, R.id.btn_click_me);
+                    }
+
+                    @Override
+                    public void onStart() {
+
                     }
                 })
                 .build();
@@ -76,13 +83,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         //Change text size
                         magicDialog.setTextSize(R.id.btn_click_me, 16);
 
-                        magicDialog.setOnClickListener(R.id.btn_click_me, new View.OnClickListener() {
+                        magicDialog.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(MainActivity.this, "弹窗二", Toast.LENGTH_SHORT).show();
-                                magicDialog.dismiss();
+                                if(v.getId() == R.id.btn_click_me) {
+                                    Toast.makeText(MainActivity.this, "弹窗二", Toast.LENGTH_SHORT).show();
+                                    magicDialog.dismiss();
+                                }
                             }
-                        });
+                        }, R.id.btn_click_me);
+                    }
+
+                    @Override
+                    public void onStart() {
+
                     }
                 })
                 .build();
